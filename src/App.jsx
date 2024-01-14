@@ -6,7 +6,9 @@ const pokeNames = ['pikachu', 'bulbasaur', 'snorlax', 'charmander', 'squirtle', 
 function App() {
   return (
     <div>
-      <h1>Pokemon</h1>
+      <div id="top">
+      <h1>Pokemon Memory Game</h1>
+      </div>
       <div id="cardCont">
           {
             pokeNames.map((pokeName) => {

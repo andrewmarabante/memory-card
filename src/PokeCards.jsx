@@ -1,12 +1,15 @@
 import React from "react";
 import PokeInfo from "./PokeInfo.jsx"
+import "./PokeCards.css"
 
 
 export default function PokeCard(props)
 {
     return(
-        <div id="pokeCard">
-            <PokeInfo id = {props.id}></PokeInfo>
+        <div className="pokeCardBorder">
+            <div className="pokeCard">
+                <PokeInfo id = {props.id}></PokeInfo>
+            </div>
         </div>
     )
 }

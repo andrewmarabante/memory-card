@@ -1,0 +1,13 @@
+.pokeCard{
+    border: solid 1px black;
+    border-radius: 1em;
+    padding-top: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.pokeCardBorder{
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 1em;
+    background-color: rgb(209, 211, 189);
+}
