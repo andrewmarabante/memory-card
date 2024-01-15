@@ -1,8 +1,8 @@
 .pokeCard{
     border: solid 1px black;
     border-radius: 1em;
-    padding-top: 20px;
     background-color: rgb(255, 255, 255);
+    max-height: 350px;
 }
 
 .pokeCardBorder{

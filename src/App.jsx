@@ -34,9 +34,6 @@ function App() {
           })
         }
       </div>
-      <div>
-        <button onClick={changePokemon} id="testButton">Change Pokemon</button>
-      </div>
     </div>
   )
 }

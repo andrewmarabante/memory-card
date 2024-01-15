@@ -11,3 +11,8 @@
     text-align: center;
     padding: 30px;
 }
+
+body{
+    background-image: url('../public/images/pokeBackground.jpeg');
+    background-size: cover;
+}

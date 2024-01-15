@@ -2,5 +2,9 @@
     text-align: center;
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
-    
+    padding-top: 20px;
+}
+
+.pokeBack{
+    border-radius: 1em;
 }

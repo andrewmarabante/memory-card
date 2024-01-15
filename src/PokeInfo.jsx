@@ -3,11 +3,21 @@ import './PokeInfo.css'
 
 export default function PokeInfo(props) {
     const [pokeData, setPokeData] = useState()
+    const [showComponent, setShowComponent] = useState(false);
     useEffect(
         () => {
             pokeFetch(props.id)
         }, [pokeData]
     )
+
+    useEffect(() => { 
+        const timeout = setTimeout(() => { 
+          setShowComponent(true); 
+        }, 1000); 
+     
+        return () => clearTimeout(timeout); 
+      }, []); 
+
 
     const pokeFetch = async (pokeName) => {
         const data = await (await fetch(`https://pokeapi.co/api/v2/pokemon/${pokeName}`)).json();
@@ -15,11 +25,14 @@ export default function PokeInfo(props) {
     }
     return (
         <div>
-            {pokeData ?
+            {showComponent && pokeData ?
                 <>    
                     <div className="pokeName">{pokeData.name}</div>
                     <img src={pokeData.sprites.front_default} alt="Not Found" height='300px' className="pokePic"/>
-                </> : <><div>loading</div></>}
+                </> : 
+                <>
+                    <img src="../public/images/pokeBack.avif" height='354px' width='300' className="pokeBack"></img>
+                </>}
         </div>
     )
 }
