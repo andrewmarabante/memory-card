@@ -31,7 +31,7 @@ export default function PokeInfo(props) {
                         <img src={pokeData.sprites.front_default} alt="Not Found" height='300px' className="pokePic"/>
                 </> : 
                 <>
-                    <img src="/static/images/pokeBack.avif" height='354px' width='300' className="pokeBack"></img>
+                    <img src="/images/pokeBack.avif" height='354px' width='300' className="pokeBack"></img>
                 </>}
         </div>
     )
