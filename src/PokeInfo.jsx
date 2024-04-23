@@ -7,7 +7,7 @@ export default function PokeInfo(props) {
     useEffect(
         () => {
             pokeFetch(props.id)
-        }, [pokeData]
+        }, []
     )
 
     useEffect(() => { 
@@ -27,11 +27,11 @@ export default function PokeInfo(props) {
         <div>
             {showComponent && pokeData ?
                 <>    
-                    <div className="pokeName">{pokeData.name}</div>
-                    <img src={pokeData.sprites.front_default} alt="Not Found" height='300px' className="pokePic"/>
+                        <div className="pokeName">{pokeData.name}</div>
+                        <img src={pokeData.sprites.front_default} alt="Not Found" height='300px' className="pokePic"/>
                 </> : 
                 <>
-                    <img src="../public/images/pokeBack.avif" height='354px' width='300' className="pokeBack"></img>
+                    <img src="/static/images/pokeBack.avif" height='354px' width='300' className="pokeBack"></img>
                 </>}
         </div>
     )
